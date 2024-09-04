@@ -43,6 +43,10 @@ ALLOWED_HOSTS = [
     '127.0.0.1', 
     ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-jayadeeprav-drfartistra-53yptcrkyr8.ws.codeinstitute-ide.net',
+]
+
 
 # Application definition
 
@@ -55,6 +59,7 @@ INSTALLED_APPS = [
     'cloudinary_storage', 
     'django.contrib.staticfiles',
     'cloudinary',
+    'rest_framework',
     'profiles',
 ]
 
