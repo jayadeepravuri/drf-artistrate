@@ -63,6 +63,8 @@ INSTALLED_APPS = [
     'profiles',
     'arts',
     'comments',
+    'likes',
+    'followers',
     
 ]
 
