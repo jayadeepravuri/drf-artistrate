@@ -10,7 +10,7 @@ class Profile(models.Model):
     bio = models.TextField(blank=True)
     profile_picture = models.ImageField(upload_to='images/', 
                        default='../default_profile_f2n1za')
-    location = models.CharField(max_length=100, blank=True)
+    geolocation = models.CharField(max_length=100, blank=True)
     wallet_address = models.CharField(max_length=255, blank=True)
     verified_creator = models.BooleanField(default=False)
     blockchain_platform = models.CharField(max_length=50, blank=True)

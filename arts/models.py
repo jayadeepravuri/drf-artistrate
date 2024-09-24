@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from geolocation.models import Geolocation
 
 
 class Art(models.Model):
@@ -38,6 +39,12 @@ class Art(models.Model):
         blank=True,
         null=True,
         default=None
+    )
+    geolocation = models.ForeignKey(
+        Geolocation,
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True
     )
 
 
