@@ -67,7 +67,7 @@ ALLOWED_HOSTS = [
     '8000-jayadeeprav-drfartistra-53yptcrkyr8.ws.codeinstitute-ide.net',
     '127.0.0.1', 
     'localhost', 
-    'https://drf-artistrate-2125d79c56b7.herokuapp.com',
+    'https://drf-artistrate-2125d79c56b7.herokuapp.com/',
     ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -109,6 +109,7 @@ INSTALLED_APPS = [
 SITE_ID = 1
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -116,7 +117,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
 ]
 
 if 'CLIENT_ORIGIN' in os.environ:
