@@ -107,6 +107,7 @@ INSTALLED_APPS = [
     'followers',
     'geolocation',
 ]
+
 SITE_ID = 1
 
 MIDDLEWARE = [
