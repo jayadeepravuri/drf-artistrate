@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-
 import os
 import dj_database_url
 
@@ -68,12 +67,9 @@ ALLOWED_HOSTS = [
     '127.0.0.1', 
     'localhost', 
     'https://drf-artistrate-2125d79c56b7.herokuapp.com',
-    'drf-artistrate.herokuapp.com'
+    'drf-artistrate.herokuapp.com',
     ]
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://8000-jayadeeprav-drfartistra-53yptcrkyr8.ws.codeinstitute-ide.net',
-]
 
 
 # Application definition
@@ -86,20 +82,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage', 
     'django.contrib.staticfiles',
+    'cloudinary'
+    'rest_framework',
+    'django_filters',
+    'rest_framework.authtoken',
+    'dj_rest_auth',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'dj_rest_auth.registration',
-    
-
-    'cloudinary',
-    'rest_framework',
-    'django_filters',
-    'rest_framework.authtoken',
-    'dj_rest_auth',
     'corsheaders',
-
+    
     'profiles',
     'arts',
     'comments',
@@ -127,7 +121,7 @@ if 'CLIENT_ORIGIN' in os.environ:
      ]
 else:
      CORS_ALLOWED_ORIGIN_REGEXES = [
-         r"^https://.*\.gitpod\.io$",
+         r"^https://.*\.codeinstitute-ide\.net$",
      ]
 
 CORS_ALLOW_CREDENTIALS = True
