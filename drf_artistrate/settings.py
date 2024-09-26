@@ -69,6 +69,7 @@ ALLOWED_HOSTS = [
     'localhost', 
     'https://drf-artistrate-2125d79c56b7.herokuapp.com',
     'drf-artistrate.herokuapp.com',
+    'drf-artistrate-2125d79c56b7.herokuapp.com'
     ]
 
 
