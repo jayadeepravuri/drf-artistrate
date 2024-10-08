@@ -10,7 +10,7 @@ from .settings import (
 @api_view()
 def root_route(request):
     return Response({
-        "message": "Welcome to The Highlights DRF API!"
+        "message": "Welcome to The Artistrate DRF API!"
     })
 
 

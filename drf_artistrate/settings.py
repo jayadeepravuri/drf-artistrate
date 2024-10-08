@@ -66,11 +66,17 @@ ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     '8000-jayadeeprav-drfartistra-53yptcrkyr8.ws.codeinstitute-ide.net',
     'https://jayadeeprav-drfartistra-q67ooxnrdag.ws.codeinstitute-ide.net/',
+    '8000-jayadeeprav-drfartistra-ghpj2xv176q.ws.codeinstitute-ide.net',
+    'https://8000-jayadeeprav-drfartistra-ghpj2xv176q.ws.codeinstitute-ide.net',
     '127.0.0.1', 
     'localhost', 
     'https://drf-artistrate-2125d79c56b7.herokuapp.com',
     'drf-artistrate-2125d79c56b7.herokuapp.com',
     ]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-jayadeeprav-drfartistra-ghpj2xv176q.ws.codeinstitute-ide.net'
+]
 
 
 
